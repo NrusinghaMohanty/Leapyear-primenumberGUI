@@ -2,15 +2,16 @@ var btnbottom=document.querySelector("#btn");
 var inputText=document.querySelector("#input");
 var outputText=document.querySelector("#output");
 
-array=inputText.value.split("-")
+   
+function clickHandler(year){
+var array=inputText.value.split("-")
 
 var year = array[2];
    
-function clickHandler(year){
-   
-      if(year % 4==0){
-         if(year %100==0){
-           if(year %400==0){
+
+      if(year % 4===0){
+         if(year %100===0){
+           if(year %400===0){
              outputText.innerText= "is a leap year"
            }else{
              outputText.innerText= "is not a leap year"
