@@ -2,7 +2,7 @@ var btnbottom=document.querySelector("#btn");
 var inputText=document.querySelector("#input");
 var outputText=document.querySelector("#output");
 
-var array=inputText.value.split("-")
+array=inputText.value.split("-")
 
 var year = array[2];
    
